@@ -3,6 +3,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // To get the root element from the HTML document
 import asabenehImage from './images/asabeneh.jpg'
+import htmlLogo from './images/html_logo.png'
+import reactLogo from './images/react_logo.png'
+import cssLogo from './images/css_logo.png'
 
 // to import the doSomeMath from the math.js with or without extension
 import doSomeMath from './math.js'
@@ -66,9 +69,32 @@ const personAge = (
 const techs = ['HTML', 'CSS', 'JavaScript']
 const techsFormatted = techs.map((tech) => <li>{tech}</li>)
 
+const imgStyle = {
+  width: '200px',
+  height: '200px'
+}
+
+const containerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignContent: 'center',
+  justifyContent: 'center'
+}
+
 const user = (
   <div>
     <img src={asabenehImage} alt='asabeneh image' />
+  </div>
+)
+
+const frontendTechs = (
+  <div style={containerStyle}>
+    <p>Front end technologies</p>
+    <div>
+      <img src={htmlLogo} alt='html5 logo' style={imgStyle}/>
+      <img src={cssLogo} alt='css3 logo' style={imgStyle}/>
+      <img src={reactLogo} alt='react logo' style={imgStyle}/>
+    </div>
   </div>
 )
 
@@ -86,6 +112,7 @@ const main = (
       <ul>{techsFormatted}</ul>
       {result}
       {personAge}
+      {frontendTechs}
       {user}
     </div>
   </main>
