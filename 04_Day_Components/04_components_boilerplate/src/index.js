@@ -3,6 +3,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import asabenehImage from './images/asabeneh.jpg'
 
+import htmlLogo from './images/html_logo.png'
+import reactLogo from './images/react_logo.png'
+import cssLogo from './images/css_logo.png'
+
 const hexaColor = () => {
   let str = '0123456789abcdef'
   let color = ''
@@ -49,7 +53,7 @@ const Header = () => (
 // User Card Component
 const UserCard = () => (
   <div className='user-card'>
-    <img src={asabenehImage} alt='asabeneh image' />
+    <img src={asabenehImage} alt='asabeneh' />
     <h2>Asabeneh Yetayeh</h2>
   </div>
 )
@@ -66,6 +70,29 @@ const buttonStyles = {
   border: 'none',
   borderRadius: 5,
 }
+
+const imgStyle = {
+  width: '200px',
+  height: '200px'
+}
+
+const containerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignContent: 'center',
+  justifyContent: 'center'
+}
+
+const frontendTechs = (
+  <div style={containerStyle}>
+    <p>Front end technologies</p>
+    <div>
+      <img src={htmlLogo} alt='html5 logo' style={imgStyle}/>
+      <img src={cssLogo} alt='css3 logo' style={imgStyle}/>
+      <img src={reactLogo} alt='react logo' style={imgStyle}/>
+    </div>
+  </div>
+)
 
 const Button = () => <button style={buttonStyles}> action </button>
 
