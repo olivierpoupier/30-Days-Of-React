@@ -1,0 +1,9 @@
+Exercise 01:
+
+1. To edit the content of the array. ex. make a list of components from the values contained in the array
+
+2. To give every object a stable identity
+
+3. It makes the code faster and more powerful.
+
+4. It also makes the code easier to read.
