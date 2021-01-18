@@ -1,0 +1,14 @@
+Exercise 1
+1. the properties passed to a component, most likely from a parent component
+
+2. (props) => {
+    <span>{props.test}</span>
+}
+
+3. String, Number, Boolean, Array, Object, Function
+
+4. The propTypes package helps us to assign the data types of the props we passed to a component.
+
+5. It can be used when we want to have some default prop types for a component.
+
+
